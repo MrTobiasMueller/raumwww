@@ -1,0 +1,167 @@
+@font-face {
+	font-family: Eco;
+	src: url('EcoCodingWGL4W01Regular.ttf') format('truetype');
+}
+* {
+  margin:0;
+  padding:0;
+  font-family: Eco;
+  color: #221E1F;
+}
+li ul, li ol { /*???Reset?*/
+	margin:0 1.5em;
+}
+ul, ol {
+	margin:0 1.5em 1.5em 1.5em;
+}
+body {
+  background-color: white;
+  position: relative;
+}
+
+
+/*******/
+/*KARTE*/
+/*******/
+#mapid{
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  background-color: #fff;
+}
+.leaflet-control-attribution {display: none;}
+.leaflet-control  {}/*custom control styling*/
+
+
+/*******/
+/*POPUP*/
+/*******/
+.leaflet-popup-tip {
+  display: none;
+}
+.leaflet-popup-content-wrapper {
+  box-shadow: none;
+  border-radius: 0;
+  padding: .25rem;
+  width: 15rem;
+  background-color: #fefefe;
+}
+.closed {
+  border: 1px solid #000;/*rgb(29, 94, 116);*/
+}
+.open {
+  border: 1px solid #3fa535;/*rgb(29, 94, 116);*/
+}
+.highlight {
+  border: 1px solid red;/*rgb(29, 94, 116);*/
+}
+.leaflet-popup-content {
+  margin: 0;
+}
+.leaflet-popup-content dt {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: .5rem;
+}
+.leaflet-popup-content dd {
+  font-size: .7rem;
+  margin-bottom: .25rem;
+}
+.leaflet-popup-content dd a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+.leaflet-popup-content dd span {
+  display: block;
+
+}
+
+
+/*********/
+/*OVERLAY*/
+/*********/
+.overlay {
+  position: absolute;
+  z-index: 100;
+	top: 0;
+	left: .3rem;
+}
+.overlay h1 {
+  font-weight: normal;
+  font-size: .7rem;
+  display: inline-block;
+}
+.overlay h1 > * + * {
+  margin-left: 1ch;
+}
+.overlay a {
+  font-size: .7rem;
+  color: #000;
+  margin-left: 6ch;
+}
+.overlay-bottom a {
+	font-size: .7rem;
+	color: #000;
+}
+
+@media (min-width: 30.0625rem) {
+	.overlay {
+		top: .25rem;
+		left: .5rem;
+	}
+  .overlay h1 {
+    display: inline-block;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
+  .overlay h1 > * + * {
+    margin-left: 0;
+    display: block;
+  }
+  .overlay a {
+    margin-left: 0;
+    display: block;
+    line-height: 1.5;
+  }
+}
+
+
+/*********/
+/*IMPRINT*/
+/*********/
+.wrapper {
+  margin: 3rem .3rem;
+}
+.wrapper > * + * {
+  margin-top: 2rem;
+}
+.wrapper .homelink {
+    position: fixed;
+    top: 0;
+    left: .3rem;
+    color: black;
+    background-color: white;
+    font-size: .7rem;
+    line-height: 1.5;
+}
+.wrapper h1, h2, p, ul, address {
+  font-size: .7rem;
+  max-width: 85ch;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.wrapper h1 {
+  text-transform: uppercase;
+}
+
+@media (min-width: 30.0625rem) {
+	.wrapper {
+	  margin: 3rem .5rem;
+	}
+  .wrapper .homelink {
+		left: .5rem;
+		top: .25rem;
+	}
+}

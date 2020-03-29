@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="de">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="a fragmentary archive">
+    <meta name="keywords" content="art, artists, exhibtions, information">
+    <title>raum www</title>
+
+    <!--EINBINDUNG DER VARIANTEN DES FAVICON-->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="style/icons/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="style/icons/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="style/icons/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="style/icons/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="style/icons/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="style/icons/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="style/icons/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="style/icons/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="style/icons/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="style/icons/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="style/icons/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="style/icons/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="style/icons/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="style/icons/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="style/icons/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="style/icons/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="style/icons/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="style/icons/favicon/mstile-310x310.png" />
+
+    <!--EINBINDUNG LEAFLET-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script> <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <!--EINBINDUNG LEAFLET FULLSCREEN-->
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <!--EINBINDUNG EIGENER STYLESHEETS-->
+    <link rel="stylesheet" href="style/raumwww_style.css">
+
+  </head>
+  <body>
+
+    <!--CONTAINER KARTE-->
+    <div id="mapid"></div>
+
+    <!--CONTAINER OVERLAY-->
+    <!--div class="overlay overlay-top">
+      <h1>
+        <span>a</span>
+        <span>fragmentary</span>
+        <span>archive</span>
+      </h1>
+      <a href=
+      "mailto:mail@raumwww.de?body=Hello%20Daniel%20and%20Johannes,%0D%0A%0D%0Ahere%20are%20my%20details.%0D%0A%0D%0AArtist%3A%0D%0A%0D%0AExhibition%3A%0D%0A%0D%0ADate%3A%0D%0Aplanned%20date%20IF%20there%20was%20a%20certain%20one%0D%0A%0D%0AInstitution%3A%0D%0A%0D%0AImage%3A%0D%0Atitle,%20size,%20material,%20year%0D%0A%0D%0ALinks%3A%0D%0Awebsite,%20instagram,%20institution.com%0D%0A%0D%0AInfo%3A%0D%0Ashort%20introduction%20/%20group%20show%20with%20these%20artists%20/%20documented%20online%20/%20here...%0D%0A%0D%0AImage%20attached,%20with%20at%20least%20750px%20width">contact</a>
+    </div-->
+
+    <!--EINBINDUNG EIGENER SCRIPTS-->
+    <script src="js/static/map.js"></script>
+    <script src="js/setup.js"></script>
+    <script src="js/static/controls.js"></script>
+    <script src="js/static/functions.js"></script>
+    <script src="js/addImages.js"></script>
+
+
+  </body>
+</html>
